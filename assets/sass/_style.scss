@@ -1,7 +1,10 @@
 body {
-	background-color: $background-color-second;
-	color: $background-color-main;
+	background-color: $background-color-main;
+	color: $background-color-second;
 	font-size: $font-size-main;
+}
+button {
+    border-style: solid;
 }
 /* reset bootstrap*/
 .navbar-default {
@@ -34,9 +37,178 @@ body {
     height: 75px;
 }
 /* reset bootstrap*/
+/* galleries */
+.galleries{
+    display:block;
+    width:100%; height:100vh;
+    background:#222;
+    overflow:none;
+}
+.galleries ul{
+    display:inline-block;
+    width:25%; height:100%;
+    float:left;
+    background:#222;
+    background-size:cover;
+    background-position:center;
+    transition:all .4s ease-out;
+}
+.info{
+    position:relative;
+    top:30%;
+    width:80%;
+    height:50%;
+    display:block;
+    margin:0 auto;
+}
+.info span{
+    display:block;
+    width:90%; min-height:50px; line-height:50px;
+    text-align:center; margin:0 auto;
+    padding-top:25%;
+    font-weight:bold; color:#efefef; font-size:35px;
+}
+.info strong{
+    display:block;
+    width:90%; min-height:15px; line-height:15px;
+    text-align:center; margin:0 auto; font-weight:400;
+    font-style:italic; color:#8c8c8c; font-size:15px;
+}
+.galleries ul:nth-child(1){
+    background-image: url(../img/exteriores_main.jpg);
+    background-color:rgba(10,10,10,.9);
+    background-blend-mode:overlay;
+}
+.galleries ul:nth-child(2){
+    background-image: url(../img/interior_main.jpg);
+    background-color:rgba(10,10,10,.9);
+    background-blend-mode:overlay;
+}
+.galleries ul:nth-child(3){
+    background-image: url(../img/ingenieria_main.jpg);
+    background-color:rgba(10,10,10,.9);
+    background-blend-mode:overlay;
+}
+.galleries ul:nth-child(4){
+    background-image: url(../img/home2.jpg);
+    background-color:rgba(10,10,10,.9);
+    background-blend-mode:overlay;
+}
+.galleries ul:hover{
+    background-color:rgba(10,10,10,.4);
+    background-size:cover;
+    transition:all .8s ease-out;
+}
+.galleries a, .galleries a:link{
+    text-decoration:none;
+    position:inherit !important;
+    padding:inherit !important;
+    margin:inherit !important;
+    border:inherit !important;
+    top:inherit !important;
+    color:inherit !important;
+    width:inherit !important;
+    height:inherit !important;
+    line-height:inherit !important;
+}
+.galleries ul p button{
+    margin:0 auto;
+    width:auto;
+    height:auto;
+    line-height:auto;
+    background:rgba(0,0,0,.5);
+    color:#444444;
+    font-weight:bold;
+    font-size:25px;
+    font-weight:bold;
+    display:block;
+    position:relative;
+    text-align:center;
+    padding:.3em .6em .3em .6em;
+    top:10%;
+    transform: rotate(45deg);
+}
+.galleries ul:hover button{
+    color:#eeeeee;
+    background:$background-color-fourth;
+    transform: rotate(0deg);
+    transition:all .8s ease-out;
+}
+.galleries ul p button:hover{
+    background:rgba(0,0,0,.9);/*color boton*/
+    transition:all .4s ease-out;
+}
+@media all and (min-width: 320px) and (max-width: 767px){
+.galleries ul{
+    display:block;
+    width:100%; height:100%;
+    background-color:rgba(10,10,10,.2);
+}
+.galleries ul p button:hover{
+    background:rgba(0,0,0,1);/*color boton*/
+    transition:all .1s;
+}
+.galleries ul p button{
+    background:$background-color-third;
+    color:#ffffff;
+    transform: rotate(0deg);
+}
+.galleries ul:hover button{
+    background:$background-color-fourth;
+    transform: rotate(0deg);
+}
+.galleries ul:nth-child(1){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(2){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(3){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(4){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(5){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(6){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(7){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(8){background-color:rgba(10,10,10,.4);}
+    
+.info strong{
+ color:$background-color-second;
+}
+}
+@media all and (min-width: 768px) and (max-width: 1100px){
+.galleries ul{
+    display:inline-block;
+    width:50%; height:50%;
+    background-color:rgba(10,10,10,.2);
+}
+.galleries ul p button:hover{
+    background:rgba(0,0,0,1);/*color boton*/
+    transition:all .1s;
+}
+.galleries ul p button{
+    background:$background-color-fourth;
+    color:#ffffff;
+    transform: rotate(0deg);
+}
+.galleries ul:hover button{
+    background:$background-color-third;
+    transform: rotate(0deg);
+}
+.galleries ul:nth-child(1){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(2){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(3){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(4){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(5){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(6){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(7){background-color:rgba(10,10,10,.4);}
+.galleries ul:nth-child(8){background-color:rgba(10,10,10,.4);}
+.info{
+    top:0%;
+    height:70%;
+}
+.info strong{
+ color:$background-color-second;
+}
+}
+/* galleries */
 .main {
 	background-image: url(../img/home2.jpg);
-	height: 100vh;
+	height: auto;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;

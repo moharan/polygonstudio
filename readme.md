@@ -19,5 +19,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 + Posicionado en nuestro proyecto hacer correr `npm install`para descargar e instalar todas las dependencias utilizadas.
 + Correr gulp para que se realizen las tareas especificadas.
 
-Website polygonstudio.cl
+Website polygonstudio.cl 
+
 by Rangi Becerra.
