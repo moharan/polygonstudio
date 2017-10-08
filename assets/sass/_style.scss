@@ -6,6 +6,12 @@ body {
 button {
     border-style: solid;
 }
+a {
+    color: $background-color-second;
+}
+a:hover {
+    color: $background-color-fourth;
+}
 /* reset bootstrap*/
 .navbar-default {
     background-color: $background-color-main;
@@ -218,4 +224,21 @@ button {
   	margin: 30vh auto;
   	padding: auto;
   	opacity: 50%;
+}
+.third {
+    background-image: url(../img/footer.png);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $background-color-second;
+}
+.brand-footer {
+    margin: 0 auto;
+    padding: auto;
+    opacity: 50%;
+}
+.icono-footer {
+    color: $background-color-second;
+    margin: 5px;
 }
