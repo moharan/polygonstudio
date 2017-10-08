@@ -226,7 +226,7 @@ a:hover {
   	opacity: 50%;
 }
 .third {
-    background-image: url(../img/footer.png);
+    background-image: url(../img/footer.jpg);
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,4 +241,70 @@ a:hover {
 .icono-footer {
     color: $background-color-second;
     margin: 5px;
+}
+/**/
+/* ----- GALLERY VIEW ----- */
+.products.gallery {
+  column-width: 300px;
+  column-gap: 5px;
+  padding: 0 5px;
+  font-size: 0;
+  figure {
+    position: relative;
+    display: inline-block;
+    width: 100%; height: auto;
+    margin: 0 0 5px 0;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      transition: background 300ms;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      position: absolute;
+      top: 50%; left: 0;
+      transform: translateY(-50%);
+      z-index: 2;
+      width: 100%;
+      max-height: 100%;
+      padding: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #ddd;
+      text-shadow: 0 0 1px #000;
+      opacity: 0;
+      overflow: auto;
+      transition: opacity 300ms;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar { width: 4px; }
+      &::-webkit-scrollbar-track { background: transparent; }
+      &::-webkit-scrollbar-thumb { background: #bbb; }
+      &::-webkit-scrollbar-thumb:hover { background: #999; }
+    }
+    &:hover {
+      &::after { background: rgba(0, 0, 0, 0.8); }
+      figcaption { opacity: 1; }
+    }
+  }
+}
+/**/
+.second {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.show {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+  .title {
+    font-size: 35px;
+    color: $background-color-third;
+    margin-left: 25px;
+  }
+.gallery_text {
 }
